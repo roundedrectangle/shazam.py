@@ -1,4 +1,4 @@
-from typing import TypedDict
+from typing import TypedDict, List
 from functools import cached_property
 
 class TrackImgs(TypedDict):
@@ -60,7 +60,7 @@ class LocationObj(TypedDict):
     accuracy: float
 
 class Response(TypedDict):
-    matches: list[MatchObj]
+    matches: List[MatchObj]
     location: LocationObj
     timezone: str
 
